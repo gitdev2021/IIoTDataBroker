@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+    <form action="/MQTT/MqttService">
+        <p>Topic<input type="text" name="topic" value=""></p>
+        <p>Contents<input type="text" name="jMessage" value=""></p>
+        <p><input type="text" th:value="#{jMessage}"></p>
+        <button type="submit" >Publish Message</button>
+    </form>
+</div>
+
+<div>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>RegDate</td>
+    </tr>
+    <!--
+    <tr th:each="user : ${list}">
+        <td th:text="${user.id}" />
+        <td th:text="${user.name}" />
+        <td th:text="${#dates.format(user.regDate, 'yyyy-MM-dd hh-mm-ss')}" />
+    </tr>
+    -->
+</table>
+</div>
+
+</body>
+</html>

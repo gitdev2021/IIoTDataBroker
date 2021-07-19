@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Spring Interface Service</h1>
+    <p>
+    <p><a href="/REST/GET/input?flag=DATA&message=temp">REST API Interface with GET Method</a></p>
+    <div><form method="POST" name="REST API" action="/IoTDevice/POST/input">
+        <p>Flag <input type="text" name="flag"></p>
+        <p>Message <input type="text" name="message"></p>
+        <button type="submit">POST</button>
+    </form>
+    </div>
+    </p>
+    <p>TCP Client</p>
+    <p><a href="/TCPClient">TCL Client Test</a></p>
+
+</div>
+</body>
+</html>
